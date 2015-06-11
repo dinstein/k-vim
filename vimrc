@@ -210,7 +210,7 @@ set nrformats=
 
 
 " 相对行号      行号变成相对，可以用 nj  nk   进行跳转 5j   5k 上下跳5行
-set relativenumber number
+" set relativenumber number
 au FocusLost * :set norelativenumber number
 au FocusGained * :set relativenumber
 " 插入模式下用绝对行号, 普通模式下用相对
