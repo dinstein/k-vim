@@ -565,8 +565,8 @@ endif
 " theme主题
 set background=dark
 set t_Co=256
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
 " colorscheme desert
