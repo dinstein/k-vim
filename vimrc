@@ -83,7 +83,7 @@ endif
 
 set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
 " 突出显示当前行等
-set cursorcolumn
+" set cursorcolumn
 set cursorline          " 突出显示当前行
 
 
@@ -567,10 +567,10 @@ endif
 set background=dark
 set t_Co=256
 " colorscheme solarized
-" colorscheme molokai
+colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
-colorscheme desert
+" colorscheme desert
 
 
 
