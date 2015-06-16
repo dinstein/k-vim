@@ -89,7 +89,7 @@ set cursorline          " 突出显示当前行
 
 "设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制
 "好处：误删什么的，如果以前屏幕打开，可以找回
-set t_ti= t_te=
+" set t_ti= t_te=
 
 
 "- 则点击光标不会换,用于复制
@@ -413,8 +413,8 @@ map <leader>tm :tabm<cr>
 
 
 " 新建tab  Ctrl+t
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-t>     <Esc>:tabnew<CR>
+"nnoremap <C-t>     :tabnew<CR>
+"inoremap <C-t>     <Esc>:tabnew<CR>
 " TODO: 配置成功这里, 切换更方便, 两个键
 " nnoremap <C-S-tab> :tabprevious<CR>
 " nnoremap <C-tab>   :tabnext<CR>
@@ -567,10 +567,10 @@ endif
 set background=dark
 set t_Co=256
 " colorscheme solarized
-colorscheme molokai
+" colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
-" colorscheme desert
+colorscheme desert
 
 
 
