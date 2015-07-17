@@ -450,48 +450,48 @@ Bundle 'majutsushi/tagbar'
 nmap <F9> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 " for ruby
-let g:tagbar_type_ruby = {
-    \ 'kinds' : [
-        \ 'm:modules',
-        \ 'c:classes',
-        \ 'd:describes',
-        \ 'C:contexts',
-        \ 'f:methods',
-        \ 'F:singleton methods'
-    \ ]
-\ }
+" let g:tagbar_type_ruby = {
+    " \ 'kinds' : [
+        " \ 'm:modules',
+        " \ 'c:classes',
+        " \ 'd:describes',
+        " \ 'C:contexts',
+        " \ 'f:methods',
+        " \ 'F:singleton methods'
+    " \ ]
+" \ }
 
 " go语言的tagbar配置
 " 1. install gotags 'go get -u github.com/jstemmer/gotags'
 " 2. make sure `gotags` in you shell PATH, you can call check it with `which gotags`
 " for gotags. work with tagbar
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-\ }
+" let g:tagbar_type_go = {
+    " \ 'ctagstype' : 'go',
+    " \ 'kinds'     : [
+        " \ 'p:package',
+        " \ 'i:imports:1',
+        " \ 'c:constants',
+        " \ 'v:variables',
+        " \ 't:types',
+        " \ 'n:interfaces',
+        " \ 'w:fields',
+        " \ 'e:embedded',
+        " \ 'm:methods',
+        " \ 'r:constructor',
+        " \ 'f:functions'
+    " \ ],
+    " \ 'sro' : '.',
+    " \ 'kind2scope' : {
+        " \ 't' : 'ctype',
+        " \ 'n' : 'ntype'
+    " \ },
+    " \ 'scope2kind' : {
+        " \ 'ctype' : 't',
+        " \ 'ntype' : 'n'
+    " \ },
+    " \ 'ctagsbin'  : 'gotags',
+    " \ 'ctagsargs' : '-sort -silent'
+" \ }
 
 
 " 去除taglist =>原因: 使用tagbar和ctrlp-funky可以直接快速跳转函数和变量位置,taglist有些多余
@@ -522,7 +522,7 @@ let python_highlight_all = 1
 " ###### Golang #########
 " 1.install golang and install gocode 'go get github.com/nsf/gocode'
 " 2.make sure gocode in your path: `which gocode` (add $GOPATH/bin to you $PATH)
-Bundle 'Blackrush/vim-gocode'
+" Bundle 'Blackrush/vim-gocode'
 " Bundle 'fatih/vim-go.git'
 
 " ###### Ruby #########
@@ -547,11 +547,11 @@ let g:vim_markdown_folding_disabled=1
 " ###### HTML/JS/JQUERY/CSS #########
 
 " for javascript  注意: syntax这个插件要放前面
-Bundle 'jelera/vim-javascript-syntax'
-Bundle "pangloss/vim-javascript"
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
+" Bundle 'jelera/vim-javascript-syntax'
+" Bundle "pangloss/vim-javascript"
+" let g:html_indent_inctags = "html,body,head,tbody"
+" let g:html_indent_script1 = "inc"
+" let g:html_indent_style1 = "inc"
 
 
 " for javascript 自动补全,配合YCM,需要安装nodejs&npm  see
@@ -559,7 +559,7 @@ let g:html_indent_style1 = "inc"
 " Bundle 'marijnh/tern_for_vim'
 
 " for jquery
-Bundle 'nono/jquery.vim'
+" Bundle 'nono/jquery.vim'
 
 " ###### emmet HTML complete #########
 " Bundle "mattn/emmet-vim"
@@ -569,7 +569,7 @@ Bundle 'nono/jquery.vim'
 " autocmd BufWritePost *.less :!lessc % > %:p:r.css
 
 " ###### Jinja2 #########
-Bundle 'Glench/Vim-Jinja2-Syntax'
+" Bundle 'Glench/Vim-Jinja2-Syntax'
 
 " for css color
 " not work in iterm2 which termianl selection is not xterm-256
