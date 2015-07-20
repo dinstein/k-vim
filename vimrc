@@ -306,6 +306,7 @@ nnoremap gj j
 " F4 换行开关
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
+" F7 载入 cscope.out
 
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
 noremap <F1> <Esc>"
@@ -333,6 +334,7 @@ set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
 au InsertLeave * set nopaste
 
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+nnoremap <F7> :cs add cscope.out<CR>
 
 
 "Smart way to move between windows 分屏窗口移动
