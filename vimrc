@@ -420,8 +420,8 @@ map <leader>tm :tabm<cr>
 " nnoremap <C-tab>   :tabnext<CR>
 " inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 " inoremap <C-tab>   <Esc>:tabnext<CR>i
-" nnoremap <C-Left> :tabprevious<CR>
-" nnoremap <C-Right> :tabnext<CR>
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 
 " normal模式下切换到确切的tab
 noremap <leader>1 1gt
