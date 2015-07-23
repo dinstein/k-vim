@@ -570,7 +570,7 @@ set t_Co=256
 colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
-" colorscheme desert
+colorscheme desert
 
 
 
@@ -589,4 +589,6 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
+" Ctrl+] 跳转时，如果有多个tag，提供选项，而不是默认跳转到第一个
+set cscopetag
 
