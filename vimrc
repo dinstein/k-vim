@@ -307,10 +307,7 @@ nnoremap gj j
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
 " F7 载入 cscope.out
-<<<<<<< HEAD
 " F8 生成 tags 和 cscope.out
-=======
->>>>>>> e939e5a5a09faf835a0f39c5722c9f50be1b2a5c
 
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
 noremap <F1> <Esc>"
