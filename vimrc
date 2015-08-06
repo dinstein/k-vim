@@ -336,7 +336,7 @@ au InsertLeave * set nopaste
 
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
 nnoremap <F7> :cs add cscope.out<CR>
-nnoremap <F8> :set tags+=/usr/src/linux-source-3.13.0/tags<CR>
+nnoremap <F8> :set tags+=/usr/src/linux-source/tags<CR>
 " nnoremap <F8> :!ctags -R && cscope -Rbq<CR>
 
 
