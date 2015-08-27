@@ -3,7 +3,7 @@
 #!/bin/sh
 
 # size of swapfile in megabytes  
-swapsize=512
+swapsize=1024
 
 # does the swap file already exist?  
 grep -q "swapfile" /etc/fstab
@@ -11,7 +11,8 @@ grep -q "swapfile" /etc/fstab
 # if not then create it  
 if [ $? -ne 0 ]; then  
     echo 'swapfile not found. Adding swapfile.'  
-    fallocate -l ${swapsize}M /swapfile  
+    #fallocate -l ${swapsize}M /swapfile  
+    dd if=/dev/zero of=/swapfile bs=1048576 count=${swapsize}
     chmod 600 /swapfile  
     mkswap /swapfile  
     swapon /swapfile  
