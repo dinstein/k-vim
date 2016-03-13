@@ -597,6 +597,7 @@ function! AutoSetFileHead()
     if &filetype == 'c'
         call setline(1, "\#include <stdio.h>")
         call append(1, "\#include <stdlib.h>")
+        call append(1, "\#include <string.h>")
     endif
 
     normal G
