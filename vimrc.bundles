@@ -34,6 +34,7 @@ Plug 'chazy/cscope_maps'
 
 " syntastic
 Plug 'scrooloose/syntastic'
+Plug 'vim-scripts/gtk-vim-syntax'
 
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
