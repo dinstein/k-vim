@@ -354,6 +354,7 @@ call plug#end()
 " ################### 自动补全 ###################
 
 " YouCompleteMe {{{
+    let g:ycm_show_diagnostics_ui = 0 "默认不由 YCM 接管 c 的语法检查
     "youcompleteme  默认tab  s-tab 和自动补全冲突
     "let g:ycm_key_list_select_completion=['<c-n>']
     let g:ycm_key_list_select_completion = ['<Down>']
