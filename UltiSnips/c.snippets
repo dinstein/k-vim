@@ -1,3 +1,24 @@
 snippet r
 return ${1};
 endsnippet
+
+snippet inc
+#include <stdio.h>
+#include <stdlib.h>
+
+endsnippet
+
+snippet cmain
+int main(void)
+{
+    ${1}
+    return 0;
+}
+endsnippet
+
+snippet cfun
+${1} ${2}(${3})
+{
+    return${4};
+}
+endsnippet
