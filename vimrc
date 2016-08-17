@@ -152,8 +152,8 @@ set laststatus=2
 
 " 显示行号
 set number
-" 取消换行
-set nowrap
+" 换行
+set wrap
 
 " 括号配对情况, 跳转并高亮一下匹配的括号
 set showmatch
