@@ -37,6 +37,8 @@ syntax on
 " install bundles
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
+elseif filereadable(expand("~/.config/nvim/vimrc.bundles")) " neovim
+  source ~/.config/nvim/vimrc.bundles
 endif
 
 " ensure ftdetect et al work by including this after the bundle stuff
