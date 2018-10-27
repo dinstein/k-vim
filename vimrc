@@ -468,6 +468,7 @@ noremap <right> :bn<CR>
 " http://stackoverflow.com/questions/2005214/switching-to-a-particular-tab-in-vim
 
 " tab切换
+map <leader>tc :tabnew<cr>
 map <leader>th :tabfirst<cr>
 map <leader>tl :tablast<cr>
 
